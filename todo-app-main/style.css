@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Josefin+Sans:wght@400;700&display=swap');
+
+:root{
+
+  --bg-color: rgba(46, 49, 85);
+
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:hsl(235, 21%, 11%);
+
+    font-family: "Josefin Sans";
+    font-weight: 700;
+
+    position: relative;
+    font-size: 32px;
+
+  }
+
+  body.active1 {
+    background-color: hsl(0, 0%, 93%);
+  }
+
+
+  input[value="United States"]{
+    color: rgb(76, 0, 255);
+
+  }
+
+
+  .main-content{
+    display: block;
+    margin:auto;
+    height: 300%;
+    width: 100%;
+    padding: 15%;
+
+
+    background-image: url(images/bg-desktop-dark.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+  }
+
+
+.mainheader{
+margin: auto;
+display:flex;
+flex-direction:row;
+margin-top: -27%;
+justify-content:space-around;
+
+
+}
+
+.mainheader h1{
+  margin-top:5%;
+  font-size:42px ;
+  letter-spacing:10px ;
+  color: hsl(0, 100%, 100%);
+
+
+}
+
+ .mainheader img{
+   margin-top:4%;
+  width: 4%;
+  height:4%;
+  align-content: center;
+}
+
+
+.mainheader img {
+  transition: transform .6s ease-in-out;
+}
+.mainheader img:hover {
+  cursor: default;
+  transform: rotate(360deg);
+}
+
+.main-bottom1 {
+
+  margin: auto;
+  width: 66%;
+  padding: 1%;
+
+}
+
+.main-bottom1 input {
+  margin: auto;
+  width: 77%;
+  height: 2%;
+  padding: 2% 1% 2% 1%;
+  letter-spacing: 2.5px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border-style: none;
+  border-radius: 10px;
+  background-color: rgba(46, 49, 85, 0.2);
+
+}
+
+.addbutton input{
+  font-size: 25px;
+  color:hsl(0, 0%, 100%);
+  border-style: none;
+  font-family: "Josefin Sans";
+  border-color:rgba(46, 49, 85, 0.8);
+}
+
+body.active1 .addbutton input{
+  background-color: hsl(0, 0%, 98%, 0.95);
+  color: rgb(99, 100, 116)
+}
+
+.addbutton input .active{
+  background-color:hsl(0, 0%, 98%, 0.25);
+  color:hsl(0, 0%, 0%);
+}
+
+ .addbutton{
+  margin:auto;
+ display:flex;
+ align-items:center;
+ flex-direction: row;
+ justify-content: center;
+
+ width:68%;
+ bottom:20%;
+ border-style:none;
+ border-radius: 10px;
+ background-color:rgba(46, 49, 85, 0.8);
+
+ }
+
+ body.active1 .addbutton {
+  background-color: hsl(0, 0%, 98%);
+}
+
+.button {
+  width:32px;
+  height:32px;
+  margin-left:8%;
+  border-radius: 50%;
+
+  border-style: none;
+  background: hsl(240, 9%, 98%);
+  position: relative;
+  cursor: pointer;
+}
+body.active1 .button {
+  background-color: rgba(117, 116, 116, 0.469);
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  width: 94%;
+  height: 94%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(46, 49, 85, 0.95);
+}
+
+body.active1 .button::before {
+  background-color:  hsl(0, 0%, 98%, 0.95);
+}
+  .button:hover  {
+  background-image: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+
+.main-bottom1 .h2{
+  width: 4%;
+  height:2%;
+  border-color:white;
+  border-radius: 50%;
+}
+
+
+
+
+.mainbottom {
+   margin: auto;
+
+    padding: 1%;
+
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 8px;
+    background-color: rgba(46, 49, 85, 0.8);
+}
+
+body.active1 .mainbottom {
+  background-color:hsl(0, 0%, 98%, 0.95);
+}
+
+
+.mainbase{
+
+  width: 68%;
+  margin: auto;
+  background-color: rgba(46, 49, 85);
+  border-radius: 8px;
+
+}
+
+
+body.active1 .mainbase {
+  background-color: hsl(0, 0%, 98%);
+}
+
+
+
+.ul{
+  height:150%;
+  width: 158%;
+}
+
+
+ #todolist{
+  list-style-type: none;
+  background-color:transparent;
+}
+
+
+
+
+.buttons {
+  width: 24px;
+  height: 24px;
+
+
+  bottom:4px;
+  cursor: pointer;
+  border-radius: 50%;
+  border-style: none;
+  position: relative;
+  background: hsl(236, 15%, 42%);
+}
+
+
+body.active1 .buttons {
+  background-color: rgba(117, 116, 116, 0.469);
+}
+
+
+
+.buttons::before{
+  content: "";
+  top: 50%;
+  left: 48.9%;
+
+  width: 95%;
+  height: 95%;
+  position: absolute;
+  cursor: pointer;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(46, 49, 85, 0.95);
+}
+
+body.active1 .buttons::before {
+  background-color: hsl(0, 0%, 98%, 0.95);
+ 
+}
+.buttons:hover  {
+  background-image: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  cursor: pointer;
+}
+
+
+.btnDone {
+  background-color: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  color: #fff;
+}
+
+.todo {
+  padding: 1em;
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+
+.checked  {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+
+
+  bottom:4px;
+  cursor: pointer;
+  align-items:center;
+  position: relative;
+  border-style: none;
+  background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+
+
+.checked::before {
+ content: "";
+ left: 60%;
+ top: 66.1%;
+
+
+ width: 65%;
+ height: 65%;
+ position: absolute;
+ transform: translate(-50%, -50%);
+ background: url("images/icon-check.svg") no-repeat;
+
+}
+.activetodo{
+  display:block;
+}
+.nonactivetodo{
+  display:none;
+}
+
+
+
+
+.corner{
+  display:flex;
+font-size: 15px;
+justify-content: space-around;
+align-items: center;
+padding-left: 1.5%;
+border-radius: 8px;
+color: rgb(99, 100, 116);
+background-color: rgba(46, 49, 85, 0.8);
+}
+body.active1 .corner {
+  background-color: hsl(0, 0%, 98%, 0.95);
+}
+
+.mid{
+  display:flex;
+  font-size: 15px;
+  column-gap: 15px;
+  padding-left: 8%;
+}
+
+
+body.active1 .mid {
+  background-color: hsl(0, 0%, 98%, 0.95);
+}
+
+.mid p:hover, .corner p:hover{
+color: #fff;
+}
+
+
+
+body.active1 .mid p:hover, .corner p:hover{
+  color:hsl(220, 98%, 61%);
+}
+
+
+.p img{
+  width:2%;
+  padding-right:10px ;
+  cursor:pointer;
+}
+
+
+.p img:hover:after{
+
+width:9%;
+right:5%;
+}
+
+
+hr{
+ border-style: none;
+ border-bottom:0.0005px solid rgba(117, 116, 116, 0.329);
+ margin-bottom: -25px;
+ margin-top: -10px;
+
+}
+
+body.active1 hr{
+  border-bottom: 0.000005px solid rgba(117, 116, 116, 0.112);
+}
+
+.todoItem{
+  margin:auto;
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: row wrap;
+
+  align-items: center;
+  color: rgb(204, 204, 204);
+  font-size: 58%;
+  height:40px;
+  padding: 5px 7px 15px;
+  }
+
+  body.active1 .todoItem {
+    background-color: hsl(0, 0%, 98%, 0.95);
+    color:hsl(235, 19%, 35%);
+  }
+
+  .drop{
+    display:flex;
+    margin:auto;
+    font-size: 15px;
+    padding-top: 50px;
+
+    padding: 50px 0px 0 300px;
+    color: rgb(99, 100, 116);
+  }
+  .attribution{
+    padding-top: 50px;
+  }
+
+
+  /* Mobile only ( = 375px ) */
+@media only screen and (max-width: 950px) {
+
+  .main-content{
+    display: flex;
+    margin:auto;
+    height: 300%;
+    width: 100%;
+    /* padding: 25%; */
+  }
+  .mainheader h1 {
+    /* margin-top: -12%; */
+    font-size: 25px;
+    
+}
+  .mainheader img {
+    /* margin-top: -12%; */
+    width: 6%;
+    height: 6%;
+
+}
+
+.addbutton{
+  width:90%;
+  /* margin-top: -10%; */
+  
+}
+
+.addbutton input {
+  font-size: 18px;
+}
+
+.main-bottom1{
+  width:98%;
+  margin-top: -10%;
+  /* padding: 1%; */
+  
+}
+
+
+.buttons .buttons::before{
+  width:50%;
+}
+
+.button  {
+ margin-left: 3%; 
+  width: 23px;
+  height: 22px;
+
+}
+
+
+
+.mainbase{
+  width:90%;
+  font-size: 60%;
+}
+
+ .todoItem{
+  width:95%;
+  font-size: 60%;
+} 
+
+.corner{
+  height:40px;
+}
+.corner p{
+  display:none;
+}
+.corner p1{
+  display:flex;
+  justify-content:stretch;
+  font-size: 80%;
+}
+
+.drop{
+  padding: 20px 0px 0 70px;
+}
+
+
+}
